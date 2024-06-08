@@ -1,0 +1,143 @@
+body{
+  margin: 0;
+  padding: 0  ;
+}
+
+.container{
+  
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(275, 100%, 97%);
+}
+
+.bottom_section{
+  width: 100%;
+  height: fit-content;
+  background-color: hsl(275, 100%, 97%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.faq_container{
+  width: 40%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 35%;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 10px;
+}
+.faq_header{
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+
+}
+.faq_header img{
+  margin-left: 10%;
+}
+.faq_header h1{
+  font-family: Work Sans;
+  font-size: 38px;
+  font-weight: 700;
+  margin-left: 3%;
+  color: hsl(292, 42%, 14%);
+}
+/* faq content */
+.faq_content{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.faq_content .item {
+  width: 95%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5% 0;
+  border-bottom: 1px solid hsl(275, 100%, 97%);
+}
+
+.faq_content .item:last-child {
+  border-bottom: none; 
+}
+.item .title{
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.title h2{
+  margin: 0;
+  font-family: Work Sans;
+  font-size: 16px;
+  font-weight: 600;
+  color: hsl(292, 42%, 14%);
+}
+.title h2:hover{
+  color: #AD28EB;
+}
+
+.content p{
+  font-family: Work Sans;
+  font-size: 14px;
+  font-weight: 400;
+  color:  hsl(292, 16%, 49%);
+}
+
+/* for mobile view */
+@media (max-width: 768px) {
+
+
+
+  .faq_container {
+    width: 90%;
+    display: flex;
+    position: relative;
+    bottom: 40%;
+  }
+
+  .faq_header h1 {
+    font-size: 24px; /* Adjust font size for mobile view */
+  }
+
+  .title h2 {
+    margin: 0;
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 600;
+    color: hsl(292, 42%, 14%);
+  }
+
+  .title h2:hover{
+    color: #AD28EB;
+  }
+
+  .content p {
+    font-family: Work Sans;
+    font-size: 14px;
+    font-weight: 400;
+    color:  hsl(292, 16%, 49%);
+  }
+}
+
+
+
+
+
+
+
